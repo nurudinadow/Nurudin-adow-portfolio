@@ -29,8 +29,9 @@ Feel free to explore the portfolio by visiting the provided link. Navigate throu
 
 ### Acknowledgments
 
-- **Images:** "Coming soon" image used throughout the website, with credits to [Pexels](https://www.pexels.com/).
-- **Tutorials:** This project was influenced by the "Build Responsive Real-World Websites with HTML and CSS" course by Jonas Schmedtmann on Udemy. 
+- **Images:** "Coming soon" image used throughout the website, with credits to [Pexels](https://www.pexels.com/) and the main banner created using [Canva](https://www.canva.com/).
+- **Tutorials:** This project was influenced by the "Build Responsive Real-World Websites with HTML and CSS" course by Jonas Schmedtmann on Udemy.
+- **HTML and CSS Tutorials:** Tutorials on HTML and CSS from [W3Schools](https://www.w3schools.com/).
 
 ### Future Enhancements
 
