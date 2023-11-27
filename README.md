@@ -37,6 +37,10 @@ Feel free to explore the portfolio by visiting the provided link. Navigate throu
 
 As my skills and project portfolio grow, I plan to continuously update and enhance the website. Stay tuned for more exciting additions!
 
-Explore the portfolio: [Nurudin Adow Portfolio](#)
+Explore the portfolio: [Nurudin Adow Portfolio](https://nurudinadow.github.io/Nurudin-adow-portfolio/)
 
 Thank you for visiting!
+
+### Image of the Website
+
+![Alt text](<Website Photo.jpg>)
