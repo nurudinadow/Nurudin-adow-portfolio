@@ -1,44 +1,87 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nurudin Adow // Web Developer</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+</html>
 
 <body>
   <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
-    </nav>
+  <header id="header">
+      <h1 class="head">Nurudin Adow</h1>
+      <img class="head" id="headshot" src="./assets/images/headshot.jpg" alt="photo of Nurudin Adow">
+      <nav id="navbar" class="link-style">
+          <a href="#about">About Me</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact Me</a>
+          <a href="#cv">CV</a>
+      </nav>
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
+  <section id="hero-banner">
+
+      <div id="banner-text">
+          <h2>Project Porfolio</h2>
+      </div>
+
   </section>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
+  <main id="main-grid">
+      <!-- about me -->
+      <section class="page-section" id="about">
+          <div id="heading-about" class="main-heading">
+              <h2>About Me</h2>
+          </div>
+          <div id="about-me" class="content">
+              <p>An IT Support Technician with aspirations to become a skilled Front-End Developer, I am actively
+                  refining my coding skills in HTML, CSS, and JavaScript. Fueled by a passion for web design and
+                  development, I am eager to contribute to innovative projects and remain dedicated to continuous
+                  learning in the dynamic field of web development.</p>
+          </div>
+      </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+      <!-- portfolio container -->
+      <section class="page-section" id="work">
+          <div id="heading-work" class="main-heading">
+              <h2>Work</h2>
+          </div>
+          <div id="content-work" class="content">
+              <a id="project1" class="projects"
+                  href="https://nurudinadow.github.io/horiseon_code_refactor/#search-engine-optimization">
+                  <div class="project-title">Horiseon Code Refactor</div>
+              </a>
+              <a id="project2" class="projects" href="https://nurudinadow.github.io/prework-study-guide/">
+                  <div class="project-title">Prework Study Guide </div>
+              </a>
+              <a id="project3" class="projects" href="#">
+                  <div class="project-title">Project 3</div>
+              </a>
+              <a id="project4" class="projects" href="#">
+                  <div class="project-title">Project 4</div>
+              </a>
+              <a id="project5" class="projects" href="#">
+                  <div class="project-title">Project 5</div>
+              </a>
+          </div>
+      </section>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
+      <!-- contact -->
+      <section class="page-section" id="contact">
+          <div id="heading-contact" class="main-heading">
+              <h2>Contact Me</h2>
+          </div>
+          <div id="contact-links" class="link-style">
+              <a class="link-style" href="tel:+447566227252">07566227252</a>
+              <a class="link-style" href="mailto:nurudinadow@gmail.com">nurudinadow@gmail.com</a>
+              <a class="link-style" href="https://github.com/nurudinadow/">GitHub</a>
+              <a class="link-style" href="https://www.linkedin.com/in/nurudinadow/">LinkedIn</a>
+          </div>
+      </section>
   </main>
 </body>
 

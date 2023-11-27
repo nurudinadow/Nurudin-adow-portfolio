@@ -1,23 +1,258 @@
-* {
-  box-sizing: border-box;
+/* Color variables*/
+:root {
+  --lightblue: rgba(0, 161, 182, 0.8);
+  --navy: #000000;
 }
 
+/* Styles for the overall body of the page */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+/* Styles for the header section, which includes the logo and navigation */
+#header {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  /* White background */
+  height: 150px;
 }
 
-p {
-  margin: 0;
+/* Styles for the avatar image */
+#headshot {
+  order: -1;
+}
+
+/* Styles for the main heading within the header */
+#header h1 {
+  padding: 30px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the navigation bar */
+#navbar {
+  display: flex;
+  width: 40%;
+  margin-left: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Styles for the hero banner section with a background image */
+#hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+}
+
+/* Styles for the banner text within the hero banner */
+#banner-text {
+  background-color: rgba(0, 161, 182, 0.8);
+  right: 50px;
+  position: absolute;
+  top: 350px;
+  padding: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+/* Styles for the main grid layout */
+#main-grid {
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+  grid-template-areas:
+    "ab"
+    "wo"
+    "co";
+}
+
+/* Styles for the 'About Me' section */
+#about {
+  grid-area: ab;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: "habout cabout";
+}
+
+/* Styles for the 'Work' section */
+#work {
+  grid-area: wo;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: "hwork cwork";
+}
+
+/* Styles for the 'Contact' section */
+#contact {
+  grid-area: co;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: "hcontact clinks";
+}
+
+/* Styles for the heading within the 'About Me' section */
+#heading-about {
+  grid-area: habout;
+}
+
+/* Styles for the content within the 'About Me' section */
+#about-me {
+  grid-area: cabout;
+  font-size: 1.5rem;
+}
+
+/* Styles for the heading within the 'Work' section */
+#heading-work {
+  grid-area: hwork;
+}
+
+/* Styles for the content within the 'Work' section */
+#content-work {
+  grid-area: cwork;
+  min-height: 800px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "p1 p1"
+    "p2 p3"
+    "p4 p5";
+}
+
+/* Styles for the heading within the 'Contact' section */
+#heading-contact {
+  grid-area: hcontact;
+}
+
+/* Styles for the contact links within the 'Contact' section */
+#contact-links {
+  grid-area: clinks;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Styles for individual project sections with background images */
+#project1 {
+  grid-area: p1;
+  background-image: url("../images/horiseon.png");
+}
+
+#project2 {
+  grid-area: p2;
+  background-image: url("../images/prework-study-guide.png");
+}
+
+#project3 {
+  grid-area: p3;
+  background-image: url("../images/coming-soon.jpg");
+}
+
+#project4 {
+  grid-area: p4;
+  background-image: url("../images/coming-soon.jpg");
+}
+
+#project5 {
+  grid-area: p5;
+  background-image: url("../images/coming-soon.jpg");
+}
+
+/* Styles for the links within the navigation bar */
+.link-style a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid var(--navy);
+  padding: 5px;
+  font-size: 1.5rem;
+  /* Adjust link font size */
+}
+
+/* Styles for the main heading section */
+.main-heading {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 40px;
+  border-right: 5px solid var(--navy);
+  font-size: large;
+}
+
+/* Styles for the main heading (name) */
+.head {
+  font-size: 3.5rem;
+}
+
+/* Styles for individual page sections */
+.page-section {
+  margin: 15px;
+}
+
+/* Styles for the content within a section */
+.content {
+  padding-left: 20px;
+}
+
+/* Styles for project links with a border, margin, and background image */
+.projects {
+  border: 6px solid var(--lightblue);
+  margin: 5px;
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+  filter: brightness(70%) grayscale(100%);
+  transition: filter 0.8s ease;
+}
+
+/* Hover styles for projects*/
+.projects:hover {
+  filter: brightness(100%) grayscale(0%);
+}
+
+/* Styles for project headings with a background color */
+.project-title {
+  background-color: rgba(0, 161, 182, 0.8);
+  padding: 15px;
+  height: 45px;
+  color: black;
+  font-size: 35px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 1000px) {
+  .head {
+    position: static;
+  }
+
+  /* Styles for the navigation bar on smaller screens */
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: smaller;
+  }
+
+  /* Styles for contact links on smaller screens */
+  #contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25px;
+  }
 }
